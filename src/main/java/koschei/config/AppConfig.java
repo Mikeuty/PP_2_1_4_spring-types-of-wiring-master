@@ -1,6 +1,8 @@
 package koschei.config;
 
-import koschei.models.*;
+import koschei.models.Deth8;
+import koschei.models.Island2;
+import koschei.models.Wood3;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -15,8 +17,7 @@ public class AppConfig {
     }
 
     @Bean
-    public static Duck5 getDuck(Egg6 egg) { return new Duck5(egg); }
-
-    @Bean
-    public static Deth8 getDeth() { return  new Deth8(); }
+    public static Deth8 getDeth() {
+        return new Deth8();
+    }
 }
